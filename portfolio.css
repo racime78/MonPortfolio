@@ -144,7 +144,6 @@ padding-bottom: 1%;
     filter: grayscale(100%);
     transition: 0.6s;
     margin: 0 auto;
-    background-color: black;
 }
 
 .parcours img:hover
