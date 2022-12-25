@@ -63,7 +63,7 @@ h2
 .header li 
 {
     display: inline-block; 
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 10vh;
 }
 
@@ -80,7 +80,7 @@ h2
 {
   background-image: url(public/nuit2.png);
   background-size: cover;
-  height: 65vh;
+  height: 75vh;
   width: 100%;
 }
 
