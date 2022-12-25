@@ -15,12 +15,21 @@ h1
 
 h2
 {
-    padding-top: 3vh;
-    padding-bottom: 3vh; 
+    padding: 1vh; 
     text-align: center;
-    color: rgb(198, 198, 198) ;
+    color: white ;
     text-decoration: underline;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(17, 17, 40);
+}
+
+h3
+{
+color: white;
+}
+
+h4
+{
+color: white;
 }
 
 
@@ -112,18 +121,14 @@ h2
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    background-color: rgb(20, 20, 20);
 }
 
-
-
-#projet h3
-{
-    color: grey ;
-    margin-bottom: 2vh;
-    text-align: center;
+#projet .projet1 , .projet2 , .projet3 , .projet4 , .projet5
+{ 
+  margin: 1vh;   
+  margin-left: 3%;  
+  margin-top: 5vh; 
 }
-
 
 #projet img
 {
@@ -133,11 +138,6 @@ h2
   border-radius: 50%;
   filter: grayscale(100%);
 
-}
-#projet .projet1 , .projet2 , .projet3 , .projet4 , .projet5
-{ 
-  margin: 1vh;   
-  margin-left: 3%;   
 }
 
 #projet img:hover
@@ -149,34 +149,90 @@ h2
 /*FIN CSS PROJET */
 
 /* DEBUT CSS PARCOURS*/
+
 .parcours
 {
-    display: flex;
-    flex-direction: row;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(public/nuit3.png);
+  padding-top: 5vh;
+  padding-left: 33%;
+}
+
+.bac , .snir , .sio
+{
+    width: 500px;
+    margin: 4vh;
+    padding: 3vh;
+    text-align: center;
+    border-radius: 10px;
     background-color: white;
-    justify-content: center;
-
+    color: black;
 }
 
-.parcours img
+.bac:hover , .snir:hover , .sio:hover
 {
-    filter: grayscale(100%);
-    transition: 0.6s;
-    margin-top: 1vh;
+  -webkit-transform:scale(1.10);
+  transition: 0.6s;
 }
 
-.parcours img:hover
+.bac h2 , .snir h2 , .sio h2 , .bac h3 , .snir h3 , .sio h3 , .bac h4 , .snir h4 , .sio h4
 {
-    filter: grayscale(0%);
-    transition: 0.6s;
-    -webkit-transform:scale(1.20);
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
+
 /*FIN CSS PARCOURS*/
 
 ::-webkit-scrollbar
 {
   display: none;
 }
+
+
+/*DEBUT CSS COMPETENCE*/
+
+.competence
+{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  height: 30vh;
+  background-image: url(public/nuit4.png);
+  background-size: cover;
+
+}
+
+
+.competence1 , .competence2
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5vh;
+  overflow-x: scroll;
+
+}
+
+.competence1 p, .competence2 p
+{
+  font-weight: bold;
+  display: inline ;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  white-space: nowrap;
+  font-size: x-large;
+  padding: 3vh;
+  margin: 2vh;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1vh;
+}
+
+
+
+
 
 
 
