@@ -59,7 +59,7 @@ color: white;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 33%;
+  width: 90%;
 }
 
 .header ul
@@ -194,11 +194,11 @@ color: white;
 
 /*DEBUT CSS COMPETENCE*/
 
-.competence
+#competence
 {
-  padding-top: 5vh;
+  padding-top: 10vh;
   padding-bottom: 5vh;
-  height: 30vh;
+  height: 40vh;
   background-image: url(public/nuit4.png);
   background-size: cover;
 
@@ -228,6 +228,22 @@ color: white;
   border-style: solid;
   border-width: 2px;
   border-radius: 1vh;
+}
+
+.footer
+{
+  height: 40vh;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+}
+
+.footer img
+{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 3%;
 }
 
 
