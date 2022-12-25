@@ -115,7 +115,7 @@ color: white;
 
 #projet
 {
-  height: 45vh;
+  height: 55vh;
     padding-left: 1%;
     background-color: rgb(20, 20, 20);
     display: flex;
@@ -152,7 +152,7 @@ color: white;
 
 .parcours
 {
-  height: 70vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   background-image: url(public/nuit3.png);
@@ -232,7 +232,7 @@ color: white;
 
 .footer
 {
-  height: 40vh;
+  height: 50vh;
   background-color: rgb(20, 20, 20);
   position: relative;
 }
