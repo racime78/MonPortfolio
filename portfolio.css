@@ -5,6 +5,7 @@
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
     background-color: transparent;
+    scroll-behavior: smooth;
 }
 
 h1
@@ -93,10 +94,17 @@ hr
 }
 /* FIN CSS MENU */
 
+.debut
+{
+z-index: 1000;
+position: fixed;
+bottom: 2vh;
+right: 5vh;
+}
 
 /*DEBUT CSS INTRO*/
 
-.container
+#container
 {
   background-image: url(public/nuit2.png);
   background-size: cover;
@@ -240,13 +248,13 @@ hr
   white-space: nowrap;
   text-align: center;
   font-weight: bolder;
-  color: white;
-  background-image: url(public/nuit4.png);
+  color: black;
+  background-color: white;
   margin: 1.5vh;
   margin-bottom: 4vh;
   padding: 2vh 1vh;
   border: 3px solid ;
-  border-radius: 12%;
+  border-radius: 7%;
 }
 
 /*FIN CSS COMPETENCE*/
@@ -330,3 +338,4 @@ hr
   padding-left: 3%;
   width: 25vh;
 }
+
