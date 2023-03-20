@@ -59,7 +59,7 @@ right: 5vh;
   height: 8vh;
   display: flex;
   align-items: center;
-  background-color:rgb(20, 20, 20);  
+  background-color:rgb(36, 36, 36);  
 }
 
 
@@ -115,18 +115,19 @@ right: 5vh;
 
 .intro h1
 {
-  margin-top: 12vh;
+  margin-top: 8vh;
   margin-left: 3%;
   color: white;
 }
 
 .intro p 
 {
+  font-size: 1px;
   color: white;
   margin-left: 3%;
   font-size: large;
   text-justify: auto;
-  width: 50%;
+  width: 70%;
 }
 
 /*FIN CSS INTRO*/
