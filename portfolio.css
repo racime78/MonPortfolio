@@ -1,4 +1,3 @@
-
 *
 {
     margin: 0;
@@ -52,7 +51,7 @@ right: 5vh;
 /* DEBUT CSS MENU */
 .header 
 {
-  z-index: 1;
+  z-index: 1000;
   position: sticky;
    top: 0px;
    margin:auto;
@@ -66,10 +65,9 @@ right: 5vh;
 
 .logo
 {
-  width: 8vh;
-  height: 8vh;
+  width: 6vh;
+  height: 6vh;
   margin-left: 3%; 
-  padding: 20vh;
 }
 
 .header nav
@@ -92,7 +90,7 @@ right: 5vh;
 .header li 
 {
     display: inline-block; 
-    font-size: 17px;
+    font-size: 15px;
     margin-right: 7vh;
 }
 
@@ -100,7 +98,6 @@ right: 5vh;
 {
   text-decoration: none;
   color: white;
-  font-weight: 600;
 }
 /* FIN CSS MENU */
 
@@ -110,40 +107,26 @@ right: 5vh;
 
 #container
 {
-  /*   background-image: url(public/nuit2.png);
- */  
-  background-color: #ebeef5;
-  height: 50vh;
-}
-
-.intro
-{
-display: flex;
-flex-direction: row-reverse;
-justify-content: center;
-text-align: center;
+  background-image: url(public/nuit2.png);
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
 }
 
 .intro h1
 {
-  color: #001994;
-  text-align: left;
+  margin-top: 12vh;
+  margin-left: 3%;
+  color: white;
 }
 
 .intro p 
 {
-  color: #001994;
+  color: white;
+  margin-left: 3%;
   font-size: large;
-  text-align: left;
-  width: 60%;
-}
-
-.intro .texteintro
-{
-  padding: 5vh;
-  margin-left: 20vh;
-  display: flex;
-  flex-direction: column;
+  text-justify: auto;
+  width: 50%;
 }
 
 /*FIN CSS INTRO*/
@@ -153,11 +136,10 @@ text-align: center;
 #projet
 {
   height: 50vh;
-  background-color: #ebeef5;
+  background-color: rgb(20, 20, 20);
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
- 
 }
 
 #projet .projet1 , .projet2 , .projet3 , .projet4 , .projet5 , .projet6
@@ -172,26 +154,24 @@ text-align: center;
 {
   display: flex;
   justify-content: center;
-  background-image: url(public/etoile.jpg);  
+  background-image: url(public/etoile.jpg);
   background-size: cover;
   border-radius: 50%;
   filter: grayscale(100%);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
-
-
 
 }
-
 
 #projet img:hover
 {
     transition: 0.6s;
     -webkit-transform:scale(1.05);
     filter: grayscale(0%);
-
 }
 
-
+#projet ::-webkit-scrollbar-x
+{
+  display: inline;
+}
 /*FIN CSS PROJET */
 
 /* DEBUT CSS PARCOURS*/
@@ -201,35 +181,38 @@ text-align: center;
   
  
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #e3e6e8;
   background-size: cover;
   padding: 2vh;
 }
 
+#parcours2
+{
+background-image: url(public/nuit3.png);
+}
 .bac , .snir , .sio, .licence
 {
-    width: 500px;
+  background-color: white;
+    width: 450px;
     margin: 3vh;
-    padding: 2vh;
+    padding: 1vh;
     text-align: center;
     border-radius: 10px;
-    background-color: white;
-    color: black;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
 
   }
 
 .bac:hover , .snir:hover , .sio:hover , .licence:hover
 {
-  -webkit-transform:scale(1.10);
+  -webkit-transform:scale(1.08);
   transition: 0.6s;
 }
 
 #parcours h2, h3,.parcours3 h2, h3
 {
+
   color: #001994;
   background-color: transparent;
   text-decoration: none;
@@ -241,6 +224,56 @@ text-align: center;
 }
 
 /*FIN CSS PARCOURS*/
+
+/* DEBUT CSS PARCOURS PRO*/
+#pro
+{
+  background-color: rgb(20, 20, 20);
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2vh;
+}
+
+ .xp1, .xp2
+{
+    width: 450px;
+    margin: 3vh;
+    padding: 1vh;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+
+} 
+#pro h2, h3
+{
+
+  color: #001994;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+.xp1:hover , .xp2:hover
+{
+  -webkit-transform:scale(1.10);
+  transition: 0.6s;
+}
+
+#pro  h4
+{
+  padding: 0.5vh;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* FIN CSS PARCOURS PRO*/
 
 
 /*DEBUT CSS COMPETENCE*/
@@ -287,58 +320,6 @@ text-align: center;
 }
 
 /*FIN CSS COMPETENCE*/
-
-
-/* DEBUT CSS PARCOURS PRO*/
-#pro
-{
-  background-color: #e3e6e8;
-  background-size: cover;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2vh;
-}
-
-.xp1 h2, .xp2 h2
-{
-  color: #001994;
-  background-color: transparent;
-  text-decoration: none;
-}
-
- .xp1, .xp2
-{
-    width: 500px;
-    margin: 3vh;
-    padding: 2vh;
-    text-align: center;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
-
-
-} 
-
-
-
-.xp1:hover , .xp2:hover
-{
-  -webkit-transform:scale(1.10);
-  transition: 0.6s;
-}
-
-#pro h4
-{
-  padding: 0.5vh;
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-/* FIN CSS PARCOURS PRO*/
 
 
 /* DEBUT CSS FOOTER*/
@@ -403,14 +384,3 @@ text-align: center;
   padding: 2vh;
   margin-right: 30vh;
 }
-
-.commentaire
-{
-  background-color: white;
-  height: 200px;
-justify-content: center;  display: flex;
-  align-items: center;
-}
-
-
-
