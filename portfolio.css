@@ -41,10 +41,12 @@ hr
 
 .debut
 {
-z-index: 1000;
-position: fixed;
-bottom: 6vh;
-right: 5vh;
+  z-index: 1000;
+  position: fixed;
+  bottom: 6vh;
+  right: 5vh;
+  width: 4vh;
+  height: 4vh;
 }
 
 
@@ -107,7 +109,7 @@ right: 5vh;
 
 #container
 {
-  background-image: url(public/nuit2.png);
+  background-image: url(public/second.jpg);
   background-size: cover;
   height: 75vh;
   width: 100%;
@@ -122,12 +124,13 @@ right: 5vh;
 
 .intro p 
 {
+  font-weight: 600;
   font-size: 1px;
   color: white;
   margin-left: 3%;
   font-size: large;
   text-justify: auto;
-  width: 70%;
+  width: 60%;
 }
 
 /*FIN CSS INTRO*/
@@ -177,10 +180,20 @@ right: 5vh;
 
 /* DEBUT CSS PARCOURS*/
 
+#parcours2
+{
+  filter: grayscale(60%);
+  height: 65vh;
+  background-image: url(public/first.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #parcours,.parcours3
 {
-  
- 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -189,21 +202,16 @@ right: 5vh;
   padding: 2vh;
 }
 
-#parcours2
-{
-background-image: url(public/nuit3.png);
-}
 .bac , .snir , .sio, .licence
 {
-  background-color: white;
+    background-color: white;
     width: 450px;
     margin: 3vh;
-    padding: 1vh;
+    padding: 2vh;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
-
-  }
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
 
 .bac:hover , .snir:hover , .sio:hover , .licence:hover
 {
@@ -214,7 +222,7 @@ background-image: url(public/nuit3.png);
 #parcours h2, h3,.parcours3 h2, h3
 {
 
-  color: #001994;
+  color: #000d4b;
   background-color: transparent;
   text-decoration: none;
 }
@@ -231,9 +239,9 @@ background-image: url(public/nuit3.png);
 {
   background-color: rgb(20, 20, 20);
   background-size: cover;
-  height: 50vh;
+  height: 35vh;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding-top: 2vh;
@@ -253,7 +261,7 @@ background-image: url(public/nuit3.png);
 #pro h2, h3
 {
 
-  color: #001994;
+  color: #050f46;
   background-color: transparent;
   text-decoration: none;
 }
@@ -285,8 +293,8 @@ background-image: url(public/nuit3.png);
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 55vh;
-  background-image: url(public/nuit4.png);
+  height: 60vh;
+  background-image: url(public/third.jpg);
   background-size: cover;
 }
 
@@ -295,10 +303,8 @@ background-image: url(public/nuit3.png);
   /*   border: 5px solid greenyellow;*/
   display: flex;
   flex-direction: column;
-  height: 45vh;
-  width: 25vh;
   margin: 2vh;
-}
+ }
 
 .competence1 p:hover, .competence2 p:hover, .competence3 p:hover, .competence4 p:hover, .competence5 p:hover, .competence6 p:hover
 {
@@ -315,7 +321,7 @@ background-image: url(public/nuit3.png);
   background-color: white;
   margin: 1vh;
   margin-bottom: 4vh;
-  padding: 1.5vh 0.5vh;
+  padding: 2vh;
   border: 3px solid ;
   border-radius: 7%;
 }
@@ -385,3 +391,5 @@ background-image: url(public/nuit3.png);
   padding: 2vh;
   margin-right: 30vh;
 }
+
+
