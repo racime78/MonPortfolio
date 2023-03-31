@@ -16,19 +16,14 @@ h1
 
 h2
 {
-    padding: 1vh; 
+    padding: 1.5vh; 
     text-align: center;
     color: white ;
     text-decoration: underline;
     background-color: rgb(17, 17, 40);
 }
 
-h3
-{
-color: white;
-}
-
-h4
+h3,h4
 {
 color: white;
 }
@@ -53,7 +48,7 @@ hr
 /* DEBUT CSS MENU */
 .header 
 {
-  z-index: 1000;
+  z-index: 1;
   position: sticky;
    top: 0px;
    margin:auto;
@@ -63,7 +58,6 @@ hr
   align-items: center;
   background-color:rgb(36, 36, 36);  
 }
-
 
 .logo
 {
@@ -96,6 +90,12 @@ hr
     margin-right: 7vh;
 }
 
+.header li:hover
+{
+  transform:scale(1.10);
+  transition: 0.6s;
+}
+
 .header li a
 {
   text-decoration: none;
@@ -109,16 +109,15 @@ hr
 
 #container
 {
-  background-image: url(public/second.jpg);
-  background-size: cover;
-  height: 75vh;
+background-color: rgb(20, 20, 20);
+  height: 50vh;
   width: 100%;
 }
 
 .intro h1
 {
   margin-top: 8vh;
-  margin-left: 3%;
+  margin-left: 7%;
   color: white;
 }
 
@@ -127,13 +126,80 @@ hr
   font-weight: 600;
   font-size: 1px;
   color: white;
-  margin-left: 3%;
+  margin-left: 7%;
   font-size: large;
   text-justify: auto;
   width: 60%;
 }
 
 /*FIN CSS INTRO*/
+
+/*DEBUT CSS COMPETENCE*/
+
+#competence ::-webkit-scrollbar-x
+{
+  display: inline;
+}
+#competence
+{
+  padding-left: 1%;
+  padding-right: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70vh;
+  background-image: url(public/third.jpg);
+  background-size: cover;
+  overflow-x: scroll;
+
+}
+
+.competence1, .competence2, .competence3, .competence4, .competence5, .competence6, .competence7, .competence8
+{
+  border-radius: 15px;
+  font-size: 10PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5vh;
+  padding-right : 1vh;
+  padding-left: 1vh;
+  padding-bottom: 0.5vh;
+  padding-top: 1vh;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+
+ }
+
+.competence1:hover, .competence2:hover, .competence3:hover, .competence4:hover, .competence5:hover, .competence6:hover, .competence7:hover, .competence8:hover
+{
+  transform:scale(1.03);
+  transition: 0.6s;
+}
+
+.competence1  p, .competence2 p, .competence3 p, .competence4 p, .competence5 p, .competence6 p,.competence7  p,.competence8  p
+  
+{
+  margin: 1vh;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(21, 6, 106);
+  margin-bottom: 3vh;
+  padding: 2vh;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.c1,.c2,.c3,.c4,.c5
+{
+  display: flex;
+  flex-direction: row;
+}
+
+/*FIN CSS COMPETENCE*/
 
 /*DEBUT CSS PROJET*/
 
@@ -168,7 +234,7 @@ hr
 #projet img:hover
 {
     transition: 0.6s;
-    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
     filter: grayscale(0%);
 }
 
@@ -215,7 +281,7 @@ hr
 
 .bac:hover , .snir:hover , .sio:hover , .licence:hover
 {
-  -webkit-transform:scale(1.08);
+  transform:scale(1.08);
   transition: 0.6s;
 }
 
@@ -270,7 +336,7 @@ hr
 
 .xp1:hover , .xp2:hover
 {
-  -webkit-transform:scale(1.10);
+  transform:scale(1.10);
   transition: 0.6s;
 }
 
@@ -285,48 +351,7 @@ hr
 /* FIN CSS PARCOURS PRO*/
 
 
-/*DEBUT CSS COMPETENCE*/
 
-#competence
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-  background-image: url(public/third.jpg);
-  background-size: cover;
-}
-
-.competence1, .competence2, .competence3, .competence4, .competence5, .competence6
-{
-  /*   border: 5px solid greenyellow;*/
-  display: flex;
-  flex-direction: column;
-  margin: 2vh;
- }
-
-.competence1 p:hover, .competence2 p:hover, .competence3 p:hover, .competence4 p:hover, .competence5 p:hover, .competence6 p:hover
-{
-  -webkit-transform:scale(1.15);
-  transition: 0.6s;
-}
-
-.competence1  p, .competence2 p, .competence3 p, .competence4 p, .competence5 p, .competence6 p
-{
-  white-space: nowrap;
-  text-align: center;
-  font-weight: bolder;
-  color: black;
-  background-color: white;
-  margin: 1vh;
-  margin-bottom: 4vh;
-  padding: 2vh;
-  border: 3px solid ;
-  border-radius: 7%;
-}
-
-/*FIN CSS COMPETENCE*/
 
 
 /* DEBUT CSS FOOTER*/
@@ -391,5 +416,4 @@ hr
   padding: 2vh;
   margin-right: 30vh;
 }
-
 
