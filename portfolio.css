@@ -17,22 +17,16 @@ h1
 h2
 {
     padding: 1.5vh; 
-    text-align: center;
-    color: white ;
     text-decoration: underline;
     background-color: rgb(17, 17, 40);
+    text-align: center;
+    color: white ;
 }
 
 h3,h4
 {
 color: white;
 }
-
-hr
-{
-  border-width: 3px;
-}
-
 
 .debut
 {
@@ -86,7 +80,8 @@ hr
 .header li 
 {
     display: inline-block; 
-    font-size: 15px;
+    font-size: 2vh;
+    font-weight: 600;
     margin-right: 7vh;
 }
 
@@ -110,7 +105,7 @@ hr
 #container
 {
 background-color: rgb(20, 20, 20);
-  height: 50vh;
+  height: 45vh;
   width: 100%;
 }
 
@@ -124,10 +119,9 @@ background-color: rgb(20, 20, 20);
 .intro p 
 {
   font-weight: 600;
-  font-size: 1px;
   color: white;
   margin-left: 7%;
-  font-size: large;
+  font-size: medium;
   text-justify: auto;
   width: 60%;
 }
@@ -156,8 +150,8 @@ background-color: rgb(20, 20, 20);
 
 .competence1, .competence2, .competence3, .competence4, .competence5, .competence6, .competence7, .competence8
 {
-  border-radius: 15px;
-  font-size: 10PX;
+  border-radius: 3%;
+  font-size: small;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,7 +184,7 @@ background-color: rgb(20, 20, 20);
   margin-bottom: 3vh;
   padding: 2vh;
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius:8%;
 }
 
 .c1,.c2,.c3,.c4,.c5
@@ -200,49 +194,6 @@ background-color: rgb(20, 20, 20);
 }
 
 /*FIN CSS COMPETENCE*/
-
-/*DEBUT CSS PROJET*/
-
-#projet
-{
-  height: 50vh;
-  background-color: rgb(20, 20, 20);
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-}
-
-#projet .projet1 , .projet2 , .projet3 , .projet4 , .projet5 , .projet6
-{ 
-  margin: 1vh;   
-  margin-left: 3%;  
-  display: flex;
-  align-items: center;
-}
-
-#projet img
-{
-  display: flex;
-  justify-content: center;
-  background-image: url(public/etoile.jpg);
-  background-size: cover;
-  border-radius: 50%;
-  filter: grayscale(100%);
-
-}
-
-#projet img:hover
-{
-    transition: 0.6s;
-    transform:scale(1.05);
-    filter: grayscale(0%);
-}
-
-#projet ::-webkit-scrollbar-x
-{
-  display: inline;
-}
-/*FIN CSS PROJET */
 
 /* DEBUT CSS PARCOURS*/
 
@@ -271,7 +222,7 @@ background-color: rgb(20, 20, 20);
 .bac , .snir , .sio, .licence
 {
     background-color: white;
-    width: 450px;
+    width: 65vh;
     margin: 3vh;
     padding: 2vh;
     text-align: center;
@@ -315,7 +266,7 @@ background-color: rgb(20, 20, 20);
 
  .xp1, .xp2
 {
-    width: 450px;
+    width: 65vh;
     margin: 3vh;
     padding: 1vh;
     text-align: center;
@@ -351,7 +302,67 @@ background-color: rgb(20, 20, 20);
 /* FIN CSS PARCOURS PRO*/
 
 
+/*DEBUT CSS PROJET*/
 
+.tbcompet a
+{
+  font-weight: 600;
+  background-color: rgb(17, 17, 40);
+  display: flex;
+  justify-content: center;
+  color: white ;
+  text-decoration: none; 
+  padding-bottom: 1.5vh;
+}
+
+.tbcompet a:hover {
+  color: white; 
+}
+
+.tbcompet a:visited {
+  color: white; 
+}
+
+#projet
+{
+  height: 50vh;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+#projet .projet1 , .projet2 , .projet3 , .projet4 , .projet5 , .projet6
+{ 
+  margin: 1vh;   
+  margin-left: 3%;  
+  display: flex;
+  align-items: center;
+}
+
+#projet img
+{
+  display: flex;
+  justify-content: center;
+  background-image: url(public/etoile.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+
+}
+
+#projet img:hover
+{
+    transition: 0.6s;
+    transform:scale(1.05);
+    filter: grayscale(0%);
+}
+
+#projet ::-webkit-scrollbar-x
+{
+  display: inline;
+}
+/*FIN CSS PROJET */
 
 
 /* DEBUT CSS FOOTER*/
